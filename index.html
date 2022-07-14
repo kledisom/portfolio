@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <aside>
+    <aside id="menu">
       <div class="perfil">
         <img
           id="imgPerfil"
@@ -53,18 +53,37 @@
           </div>
         </nav>
       </div>
-      <footer>
-        <h5>Copright KLEDISOM.DEV.BR</h5>
-      </footer>
-    </aside>
 
+      <footer><h5>Copright KLEDISOM.DEV.BR</h5></footer>
+    </aside>
     <div class="title-main">
+      <div id="ico-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       <h1>Kledisom Oliveira</h1>
       <div class="hello cursor">
         <h3>Front-end developer.</h3>
       </div>
     </div>
 
-    <script></script>
+    <script>
+      //document.getElementById("menu").style.display = "none";
+
+      var ocultarMenu = document.getElementById("imgPerfil");
+      var mostrarMenu = document.getElementById("ico-menu");
+
+      ocultarMenu.addEventListener("click", () => {
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("ico-menu").style.display = "block";
+      });
+
+      mostrarMenu.addEventListener("click", () => {
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("ico-menu").style.display = "none";
+      });
+    </script>
   </body>
 </html>
