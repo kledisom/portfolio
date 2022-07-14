@@ -11,6 +11,19 @@
     font-family: "Poppins", sans-serif;
   }
 
+  .container01 {
+    display: flex;
+    flex-grow: 1;
+    background-color: aqua;
+    border: 1px solid gold
+ }
+ .container02 {
+    display: flex;
+    flex: 9;
+    background-color: aqua;
+    border: 5px solid lime
+ }
+
   aside {
     display: flex;
     flex-direction: column;
@@ -67,23 +80,24 @@
 
   .topicos {
     height: 250px;
-    width: 270px;
+    width: 100%;
     color: #272829;
-
+  //  border: 1px solid red;
     margin-top: 30px;
   }
 
   .topicos div {
     display: flex;
+    justify-content: center;
     align-items: center;
-
+   // border: 1px solid violet;
     height: 60px;
     width: 100%;
   }
 /*============ICONES DOS TOPICOS=============*/
   .home i {
     height: 20px;
-    width: 26px;
+    width: 22px;
     margin-left: 20px;
   }
   .home:hover, .user:hover, .resume:hover, .portfolio:hover {
@@ -106,9 +120,9 @@
   }
 
   .topicos div a {
-    width: 100%;
+    width: 50%;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 20px;
     margin-left: 10px;
     color: #3b4450;
   }
@@ -127,7 +141,7 @@
     height: 100px;
   }
 
-  .title-main {
+   .title-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +156,7 @@
     background-size: 100% 100%;
     background-color: #fff;
     color: #161616;
-  }
+  } 
 
   .hello {
     border-right: 2px solid lime;
@@ -153,7 +167,7 @@
     //animation-duration: 8s; */
     overflow: hidden;
     overflow-wrap: normal;
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
     white-space: nowrap;
     text-align: center;
@@ -185,35 +199,119 @@
   } 
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================================*/
   @media (max-width: 400px) {
     * {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
     }
 
-    body {
-        height: 100vh;
+    .container01 {
+      display: flex;
+      background-color: aqua;
+      border: 1px solid gold
+      
+   }
+   .container02 {
+      display: flex;
+     
+      background-color: aqua;
+   }
 
+#ico-menu {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+
+  top: 0px;
+  height: 40px;
+  width: 100%;
+
+  background-color: #010d1e;
+  padding: 10px;
+ 
+}
+
+#ico-menu div {
+  border: 1px solid #000;
+  background-color: #2ba5bb;
+  height: 5px;
+  width: 30px;
+
+  margin: 4px 0px 0px 10px;
+}
+
+
+
+      .title-main {
+    /*     display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    
+        width: 100vw;
+        height: 100vh;
+    
+        background-image: url("https://wallpaperaccess.com/full/2109964.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-color: #fff;
+        color: #161616;
+      } 
+
+      .abaDois {
+        border: 1px solid red;
       }
 
     .perfil { 
         display: flex;
-        align-items: center;
+        /*align-items: center;*/
         justify-content: flex-start;
         flex-direction: column;
         text-align: center;
-        
-        height: 100vh;
+        height: auto;
         width: 100%;
+
       }
 
       aside {  
-        display: flex;
+        display: none;
+       // align-items: flex-start;
+        //position: fixed;
+        //margin-left: -50px;
         
         background-color: #010d1e;
         height: 100vh;
         width: 20%;
         color: #fff;
+
       }
 
       aside h4 {
@@ -240,9 +338,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    
-        height: 50%;
+        height: 70%;
         width: 100%;
+        
       }
 
       .hello {
@@ -288,30 +386,64 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        margin-top: -100px;
-        height: 35%;
         width: 100%;
         color: #272829;
+        margin-top: 10px;
       }
 
-      .topicos a {
-        display: none;
-        margin-top: 30px;
+      .topicos nav {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        width: 100%
+      }
+
+      .topicos div a {
+        display: block;
+        font-size: 1px;
       }
 
       .home i {
-        height: 20px;
+        height: 15px;
         width: 22px;
+      }
+
+      .user i {
+        height: 15px;
+        width: 22px;
+      }
+      .resume i {
+        height: 30px;
+        width: 22px;
+      }
+      .portfolio i {
+        height: 20px;
+        width: 25px;
+        margin-left: 20px;
+      }
+
+      .topicos nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
       }
 
       .topicos nav i {
         margin: 0;
       }
 
-      footer h5 {
-        font-size: 10px;
-        text-align: center
+      aside footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        text-align: center;
+        height: 40px;
+        margin-top: -4px;
       }
+
 
   }
