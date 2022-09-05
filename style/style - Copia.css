@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    //display: flex;   
+    height: 100vh;
+
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container01 {
+   // border: 1px solid gold
+ }
+ .container02 {
+    background-color: aqua;
+    border: 2px solid lime
+ }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid royalblue;
+    background-color: #010d1e;
+    height: 100%;
+    width: 20%;
+    color: #fff;
+  }
+
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid lime;
+    height: 40%;
+    width: 96%;
+  }
+
+  #imgPerfil {
+    background-color: aqua;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 6px solid #272829;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+
+  .perfil img {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 2px;
+    border: 2px solid #212529;
+  }
+
+  .perfil nav {
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+    height: 30px;
+    width: 96%;
+  }
+
+  .perfil nav img {
+    background-color: blue;
+    height: 16px;
+    width: 16px;
+  }
+/*/////////////////////////////*/
+  .topicos {
+    height: 250px;
+    width: 96%;
+    color: #272829;
+    border: 2px solid red;
+    margin-top: 30px;
+  }
+
+  .topicos div {
+    display: flex;
+    align-items: center;
+    border: 2px solid lime;
+    
+    width: 100%;
+  }
+/*============ICONES DOS TOPICOS=============*/
+  .home i {
+    height: 15px;
+    width: 20px;
+    //margin-left: 20px;
+  }
+  .home:hover, .user:hover, .resume:hover, .portfolio:hover {
+    color: #2ba5bb;
+  }
+  .user i {
+    height: 15px;
+    width: 30px;
+    margin-left: 20px;
+  }
+  .resume i {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+  }
+  .portfolio i {
+    height: 26px;
+    width: 30px;
+    margin-left: 20px;
+  }
+
+  .topicos div a {
+    width: 100%;
+    text-decoration: none;
+    font-size: 10px;
+    margin-left: 10px;
+    color: #3b4450;
+  }
+
+  .topicos a:hover{
+    color: #fff;
+  }
+
+/*^^^^^^^^^^^^ICONES DOS TOPICOS^^^^^^^^^^^^*/
+
+  aside footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 100px;
+  }
+
+   .title-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80vw;
+    height: 100vh;
+
+    background-image: url("https://wallpaperaccess.com/full/2109964.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #fff;
+    color: #161616;
+  } 
+
+  .hello {
+    border-right: 2px solid lime;
+    width: 380px;
+    height: 50px;
+ /*    //background-color: #fff;
+    //animation: example infinite normal;
+    //animation-duration: 8s; */
+    overflow: hidden;
+    overflow-wrap: normal;
+    font-size: 20px;
+    color: #000;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .hello h3 {
+    color: #fff;
+  }
+
+  .cursor {
+    animation: efectCursor 500ms steps(40) infinite normal,
+      example 5s steps(40) 1s normal both;
+  }
+
+  @keyframes example {
+    from {
+      width: 0;
+    }
+    /* background-color: #fff;}
+      to {background-color: violet;} */
+  }
+
+  @keyframes efectCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0, 75);
+    }
+   to {
+   border-right-color: transparent;
+  } 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================================*/
+  @media (max-width: 400px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container01 {
+      display: flex;
+      background-color: aqua;
+      border: 1px solid gold
+      
+   }
+   .container02 {
+      display: flex;
+     
+      background-color: aqua;
+      border: 5px solid lime
+   }
+
+      .title-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        height: 100vh;
+    
+        background-image: url("https://wallpaperaccess.com/full/2109964.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-color: #fff;
+        color: #161616;
+
+        border: 4px solid green
+      } 
+
+    .perfil { 
+        display: flex;
+        /*align-items: center;*/
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: center;
+        height: 50%;
+        width: 100%;
+      }
+
+      aside {  
+        display: flex;
+        //position: fixed;
+        //margin-left: -50px;
+        
+        background-color: #010d1e;
+        height: 100%;
+        width: 20%;
+        color: #fff;
+
+      }
+
+      aside h4 {
+        display: none;
+      }
+
+      .perfil img {
+        height: 200px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 10px;
+        border: 3px solid #272829;
+      }
+
+      #imgPerfil {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        border: 7px solid #272829;
+      }
+
+      .perfil nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        width: 100%;
+        
+      }
+
+      .hello {
+        border-right: 2px solid lime;
+        width: 300px;
+        height: 50px;
+        overflow: hidden;
+        overflow-wrap: normal;
+        font-size: 30px;
+        color: #000;
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      .hello h3 {
+        color: #fff;
+        font-size: 26px;
+      }
+
+      .cursor {
+        animation: efectCursor 500ms steps(40) infinite normal,
+          example 5s steps(40) 1s normal both;
+      }
+    
+      @keyframes example {
+        from {
+          width: 0;
+        }
+        /* background-color: #fff;}
+          to {background-color: violet;} */
+      }
+    
+      @keyframes efectCursor {
+        from {
+          border-right-color: rgba(255, 255, 255, 0, 75);
+        }
+       to {
+       border-right-color: transparent;
+      } 
+      }
+
+      .topicos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #272829;
+      }
+
+      .topicos nav {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        width: 100%
+      }
+
+      .topicos div a {
+        display: none;
+        font-size: 1px;
+      }
+
+      .home i {
+        height: 20px;
+        width: 22px;
+      }
+
+      .topicos nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+      }
+
+      .topicos nav i {
+        margin: 0;
+      }
+
+      footer h5 {
+        font-size: 10px;
+        text-align: center;
+
+
+      }
+
+  }

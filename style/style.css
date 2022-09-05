@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: logos;
+    src: url(../fonts/raleway.bold.ttf)
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: #fff;
+    font-family: "Poppins", sans-serif; 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    box-sizing: border-box;
+    height: 400vh;
+  }
+
+  .primary-page {
+   /*  display: flex;   
+    flex-direction: row; */
+  }
+  #second-page {
+    background-color: #161616;
+    width: 79vw;
+    height: 100vh;
+  }
+  #second-page header {
+   margin: 10px;
+  }
+  #second-page header h1{
+   margin-bottom: 10px;
+  }
+  #second-page header h1::after {
+   display: block;
+   content: '';
+   background-color: #2ba5bb;
+   height: 5px;
+   width: 50px;
+  }
+  .information-personal {
+    display: flex;
+
+    margin: 10px;
+  }
+  .information-personal img {
+   border-radius: 50%;
+  }
+
+  #details-personal {
+    width: 60%;
+    margin-left: 15px;
+  }
+  #details-personal h1 {
+    font-size: 2rem;
+    color: aqua;
+  }
+  .personal {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .personal div {
+    width: 50%;
+  }
+
+  .p-01 div {
+    width: 250px;
+    border-bottom: 1px solid gray;
+  }
+  .p-02 div {
+    width: 250px;
+    border-bottom: 1px solid gray;
+  }
+
+
+  /*estilos da seção 03*/
+
+  #third-page {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    
+    background-color: #161616;
+    //background-color: #6c757d;
+    width: 79vw;
+    height: 100vh;
+  }
+  #third-page header {
+    margin: 10px;
+   }
+   #third-page header h1{
+    margin-bottom: 10px;
+   }
+   #third-page header h1::after {
+    display: block;
+    content: '';
+    background-color: #2ba5bb;
+    height: 5px;
+    width: 50px;
+   }
+   .skil-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+
+    height: 50%;
+    //background-color: #c3ced7;
+   }
+   .grid-item {
+    //border: 1px solid rgba(0, 0, 0, 0.8);
+    //background-color: #161616;
+    width: 500px;
+   }
+   .percent {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   }
+   .barra-progresso {
+    background-color: #fff;
+    height: 10px;
+    width: 100%;
+   }
+
+   /*estilo efeito da barra de progresso*/
+
+   #bar-html {
+    animation: bar-html 5s normal;
+    height: 9px;
+    width: 90%;
+    background-color: #2ba5bb;
+   }
+   #bar-node {
+    animation: bar-node 5s normal;
+    height: 9px;
+    width: 40%; 
+    background-color: #2ba5bb;
+   }
+   #bar-css {
+    animation: bar-css 5s normal;
+    height: 9px;
+    width: 70%; 
+    background-color: #2ba5bb;
+   }
+   #bar-bd {
+    animation: bar-bd 5s normal;
+    height: 9px;
+    width: 50%; 
+    background-color: #2ba5bb;
+   }
+   #bar-js {
+    animation: bar-js 5s normal;
+    height: 9px;
+    width: 80%; 
+    background-color: #2ba5bb;
+   }
+   #bar-wp {
+    animation: bar-wp 5s normal;
+    height: 9px;
+    width: 1%; 
+    background-color: #2ba5bb;
+   }
+   @keyframes bar-html {
+    0% {width: 0%}
+    90% {width: 90%}
+   }
+   @keyframes bar-node {
+    0% {width: 0%}
+    40% {width: 40%}
+   }
+   @keyframes bar-css {
+    0% {width: 0%}
+    70% {width: 70%}
+   }
+   @keyframes bar-bd {
+    0% {width: 0%}
+    50% {width: 50%}
+   }
+   @keyframes bar-js {
+    0% {width: 0%}
+    80% {width: 80%}
+   }
+   @keyframes bar-wp {
+    0% {width: 0%}
+    1% {width: 1%}
+   }
+/*==================================================*/
+   /*estilos da seção 04*/
+  #fourth-page {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    background: #161616;
+    width: 79vw;
+    height: 110vh;
+  }
+  #fourth-page header {
+    margin: 10px;
+   }
+   #fourth-page header h1{
+    margin-bottom: 10px;
+   }
+   #fourth-page header h1::after {
+    display: block;
+    content: '';
+    background-color: #2ba5bb;
+    height: 5px;
+    width: 50px;
+   }
+   .port-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 250px 250px;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+
+    height: 65%;
+   }
+   .port-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+   }
+
+   .port-img {
+    background-color: pink;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #fff;
+   }
+   .port-img:hover {
+    opacity: 0.5;
+   }
+   .port-item h3 {
+    width: 50%;
+    color:#000;
+    text-align: center;
+    background-color: #2ba5bb;
+   }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    background-color: #010d1e;
+    height: 100vh;
+    width: 20vw;
+    color: #fff;
+  }
+
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    height: 40%;
+    width: 100%;
+  }
+
+  #imgPerfil {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-bottom: 15px;
+    border: 7px solid #272829;
+  }
+
+  .perfil img {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 3px solid #212529;
+  }
+
+  .perfil nav {
+    display: flex;
+    justify-content: center;
+
+    height: 50px;
+    width: 100%;
+  }
+
+  .perfil nav img {
+    background-color: blue;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+  }
+  .perfil nav img:hover {
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    
+  }
+
+  .topicos {
+    height: 250px;
+    width: 100%;
+    color: #272829;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .topicos div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    margin-left: 10px;
+  }
+/*============ICONES DOS TOPICOS=============*/
+  .home i {
+    height: 20px;
+    width: 22px;
+  }
+  .home:hover, .user:hover, .resume:hover, .portfolio:hover {
+    color: #2ba5bb;
+  } 
+ 
+  .user i {
+    height: 15px;
+    width: 30px;
+  }
+  .resume i {
+    height: 30px;
+    width: 30px;
+  }
+  .portfolio i {
+    height: 26px;
+    width: 30px;
+  }
+
+  .topicos div a {
+    width: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #3b4450;
+  }
+
+  .topicos a:hover{
+    color: #fff;
+  }
+
+/*^^^^^^^^^^^^ICONES DOS TOPICOS^^^^^^^^^^^^*/
+
+  aside footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 100px;
+  }
+
+   .title-main {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80vw;
+    height: 100vh;
+
+    background-image: url("https://blog.eseg.edu.br/wp-content/uploads/2020/06/original-6f96ee168ab0b419a98fea4f2dfc31fc.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: #fff; 
+    font-family: logos, sans-serif;
+    
+  }  
+
+  .hello {
+    border-right: 2px solid lime;
+    width: 380px;
+    height: 50px;
+    overflow: hidden;
+    overflow-wrap: normal;
+    font-size: 20px;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #000;
+    color: #fff;   
+    opacity: 80%; 
+  }
+
+  .title-main h1 {
+    font-size: 3rem;
+    font-family: logos;
+    background-color: #000;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    opacity: 80%;
+  }
+
+  .hello h3 {
+    font-size: 2rem;
+    font-weight: 500;    
+  }
+
+  .cursor {
+    animation: efectCursor 500ms steps(40) infinite normal,
+      example 5s steps(40) 1s infinite both;
+  }
+
+  @keyframes example {
+    from {
+      width: 0;
+    }
+    /* background-color: #fff;}
+      to {background-color: violet;} */
+  }
+
+  @keyframes efectCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0, 75);
+    }
+   to {
+   border-right-color: transparent;
+  } 
+  }
+
+
+
+/*=======================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================================*/
+  @media (max-width: 400px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container01 {
+      display: flex;
+      background-color: aqua;
+      border: 1px solid gold
+      
+   }
+   .container02 {
+      display: flex;
+     
+      background-color: aqua;
+   }
+
+#ico-menu {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+
+  top: 0px;
+  height: 40px;
+  width: 100%;
+
+  background-color: #010d1e;
+  padding: 10px;
+ 
+}
+
+#ico-menu div {
+  border: 1px solid #000;
+  background-color: #2ba5bb;
+  height: 5px;
+  width: 30px;
+
+  margin: 4px 0px 0px 10px;
+}
+
+
+
+      .title-main {
+  /*       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  */
+    
+        width: 100vw;
+        height: 100vh;
+    
+        background-image: url("https://wallpaperaccess.com/full/2109964.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-color: #fff;
+        color: #161616;
+      } 
+
+      .abaDois {
+        border: 1px solid red;
+      }
+
+    .perfil { 
+        display: flex;
+        /*align-items: center;*/
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        width: 100%;
+
+      }
+
+      aside {  
+        display: none;
+       // align-items: flex-start;
+       // position: fixed;
+        //margin-left: -50px;
+        
+        background-color: #010d1e;
+        height: 100vh;
+        width: 20%;
+        color: #fff;
+
+      }
+
+      aside h4 {
+        display: none;
+      }
+
+      .perfil img {
+        height: 200px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 10px;
+        border: 3px solid #272829;
+      }
+
+      #imgPerfil {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        border: 7px solid #272829;
+      }
+
+      .perfil nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        width: 100%;
+        
+      }
+
+      .hello {
+        border-right: 2px solid lime;
+        width: 300px;
+        height: 50px;
+        overflow: hidden;
+        overflow-wrap: normal;
+        font-size: 30px;
+        color: #000;
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      .hello h3 {
+        color: #fff;
+        font-size: 26px;
+      }
+
+      .cursor {
+        animation: efectCursor 500ms steps(40) infinite normal,
+          example 5s steps(40) 1s normal both;
+      }
+    
+      @keyframes example {
+        from {
+          width: 0;
+        }
+        /* background-color: #fff;}
+          to {background-color: violet;} */
+      }
+    
+      @keyframes efectCursor {
+        from {
+          border-right-color: rgba(255, 255, 255, 0, 75);
+        }
+       to {
+       border-right-color: transparent;
+      } 
+      }
+
+      .topicos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #272829;
+        margin-top: 10px;
+      }
+
+      .topicos nav {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        width: 100%
+      }
+
+      .topicos div a {
+        display: block;
+        font-size: 1px;
+      }
+
+      .home i {
+        height: 15px;
+        width: 22px;
+      }
+
+      .user i {
+        height: 15px;
+        width: 22px;
+      }
+      .resume i {
+        height: 30px;
+        width: 22px;
+      }
+      .portfolio i {
+        height: 20px;
+        width: 25px;
+        margin-left: 20px;
+      }
+
+      .topicos nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+      }
+
+      .topicos nav i {
+        margin: 0;
+      }
+
+      aside footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        text-align: center;
+        height: 40px;
+        margin-top: -4px;
+      }
+
+
+  }
